@@ -1,6 +1,9 @@
+import {MAX_NUM_CHANGED, MIN_NUM_CHANGED} from './actionTypes'
+
+
 export function alterarNumeroMinimo(novoNumero){
     return {
-        type: 'MIN_NUMBER_CHANGED', 
+        type: MIN_NUM_CHANGED, 
         payload: novoNumero
     }
 }
@@ -8,5 +11,5 @@ export function alterarNumeroMinimo(novoNumero){
 
 
 export function alterarNumeroMaximo(novoNumero){
-    return {type: 'MAX_NUMBER_CHANGED', payload: novoNumero}
+    return {type: MAX_NUM_CHANGED, payload: novoNumero}
 }
